@@ -30,7 +30,7 @@ footer {
 #subtitle {
 	font-size: 1.5em;
 }
-#content {
+.content {
 	padding: 20px 0px 40px 0px;
 }
 #timer {

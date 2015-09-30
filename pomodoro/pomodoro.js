@@ -203,8 +203,16 @@ window.onload = function () {
             timer.start();
         });
         
-    //Bind keyboard shortcut for starting timer
-    Mousetrap.bind('space', function() { 
+    // Bind keyboard shortcut for starting/pausing timer
+    Mousetrap.bind('space', function(e) { 
+        // Remove default behavior of buttons (page scrolling)
+        if (e.preventDefault()) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false; //IE
+        }
+
+        // Pause or start the timer
         if(timer.isRunning) {
             timer.pause();
         } else {
