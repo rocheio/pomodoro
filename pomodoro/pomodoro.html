@@ -12,20 +12,14 @@
   <link rel='stylesheet' type='text/css' 
         href='http://fonts.googleapis.com/css?family=Indie+Flower'>
   <link rel="stylesheet" href="pomodoro.css">
-  <script language="javascript" type="text/javascript" 
-          src="../resources/mousetrap.js" async></script>
-  <script language="javascript" type="text/javascript" 
-          src="pomodoro.js" async></script>
 </head>
 <body>
 <div class="container">
   <header>
     <div id="titlebox">
-	  <div id="title">Pomodoro</div>
-	  <div id="subtitle">A simple workflow tool from 
-      <a href="../index.html">roche.io</a>
-    </div>
-	</div>
+  	  <div id="title">Pomodoro</div>
+  	  <div id="subtitle">A simple workflow tool</div>
+  	</div>
   </header>
   <div class="content">
     <p>
@@ -83,16 +77,23 @@
         </div>
         <br>
     </div>
+    <div class="credits">
+      Created by 
+      <a href="../index.html">Andy Roche</a> - 
+      <a href="https://github.com/rocheio/rocheio.github.io/tree/master/pomodoro">Github</a>
+    </div>
   </footer>
-  <audio id="alarm_chime">
-    <source src="audio/one_chime.mp3" type="audio/mpeg"></audio>
-  <audio id="alarm_bell">
-    <source src="audio/one_bell.mp3" type="audio/mpeg"></audio>
-  <audio id="alarm_beeps">
-    <source src="audio/three_beeps.mp3" type="audio/mpeg"></audio>
-  <audio id="alarm_boops">
-    <source src="audio/three_boops.mp3" type="audio/mpeg"></audio>
-  <!-- Audio courtesy of https://soundcloud.com/andyouarewho -->
 </div>
+<audio id="alarm_chime">
+  <source src="audio/one_chime.mp3" type="audio/mpeg"></audio>
+<audio id="alarm_bell">
+  <source src="audio/one_bell.mp3" type="audio/mpeg"></audio>
+<audio id="alarm_beeps">
+  <source src="audio/three_beeps.mp3" type="audio/mpeg"></audio>
+<audio id="alarm_boops">
+  <source src="audio/three_boops.mp3" type="audio/mpeg"></audio>
+<!-- Audio courtesy of https://soundcloud.com/andyouarewho -->
+<script type="text/javascript" src="../resources/mousetrap.js"></script>
+<script type="text/javascript" src="pomodoro.js"></script>
 </body>
 </html>
